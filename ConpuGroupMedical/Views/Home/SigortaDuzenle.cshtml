@@ -1,0 +1,66 @@
+@model ConpuGroupMedical.Models.Sigorta;
+<!DOCTYPE html>
+@{
+    ViewData["Title"] = "Sigorta_Duzenle";
+}
+<html>
+    <head>
+
+    </head>
+    <body>
+        <h1>Sigorta Şirket Düzenleme Sayfası</h1>
+        <br>
+  @using (Html.BeginForm("SigortaDuzenle","Home", FormMethod.Post))
+            {
+
+                <br>
+                <br>
+            <tr>
+                <td>Sigorta Şirket Kodu </td>
+                <td>
+                    @Html.TextBoxFor(m => m.Sigorta_Sirket_Kodu)
+                </td>
+            </tr>  
+
+            <br>
+            <br>
+
+            <tr>
+                <td>Sigorta Ad </td>
+                <td>
+                    @Html.TextBoxFor(m => m.Sigorta_Adi)
+                </td>
+            </tr>
+
+            <br>
+            <br>
+
+            <tr>
+                <td>Sigorta Telefonu </td>
+                <td>
+                    @Html.TextBoxFor(m => m.Sigorta_Telefon)
+                </td>
+            </tr>
+
+            <br>
+            <br>
+
+            <tr>
+                <td>Sigorta Adres </td>
+                <td>
+                    @Html.TextBoxFor(m => m.Sigorta_Adres)
+                </td>
+            </tr>
+           <br>
+           <br>
+
+            <button type="submit" id="save" class="btn btn-primary"  >Yeni Sigorta Şirket Bilgilerini Kaydet</button>
+            
+            <br>
+            }
+           <div> 
+            <a asp-action="Sigorta_Islemleri">Sigorta Listesine Geri Dön</a> 
+            </div> 
+    
+    </body>
+</html>

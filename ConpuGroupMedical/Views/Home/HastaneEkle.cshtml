@@ -1,0 +1,78 @@
+@model ConpuGroupMedical.Models.Hastane;
+<!DOCTYPE html>
+@{
+    ViewData["Title"] = "Hastane_Ekle";
+}
+<html>
+    <head>
+
+    </head>
+    <body>
+        <h1>Hastane Ekleme Sayfası</h1>
+        <br>
+         @using (Html.BeginForm("HastaneEkle","Home", FormMethod.Post))
+            {
+                <br>
+                <br>
+            <tr>
+                <td>Hastane Tesis Kodu </td>
+                <td>
+                    @Html.TextBoxFor(m => m.Tesis_Kodu)
+                </td>
+            </tr>  
+
+            <br>
+            <br>
+
+            <tr>
+                <td>Hastane Adı </td>
+                <td>
+                    @Html.TextBoxFor(m => m.Hastane_Adi)
+                </td>
+            </tr>
+
+            <br>
+            <br>
+
+            <tr>
+                <td>Hastane Telefonu </td>
+                <td>
+                    @Html.TextBoxFor(m => m.Hastane_Telefon)
+                </td>
+            </tr>
+
+            <br>
+            <br>
+
+            <tr>
+                <td>Hastane Adresi </td>
+                <td>
+                    @Html.TextBoxFor(m => m.Hastene_Adres)
+                </td>
+            </tr>
+
+           <br>
+           <br>
+
+           <tr>
+                <td>Bağlı Olduğu Grup Id</td>
+                <td>
+                    @Html.TextBoxFor(m => m.Bagli_Oldugu_Grup_Id)
+                </td>
+            </tr>
+          
+        <br>
+        <br>
+            
+        <button type="submit" id="save" class="btn btn-primary">Yeni Hastane Bilgilerini Kaydet</button>
+        <br>
+
+            }
+        
+
+        <div> 
+            <a asp-action="Hastane_Islemleri">Hastane Listesine Geri Dön</a> 
+        </div> 
+
+    </body>
+</html>

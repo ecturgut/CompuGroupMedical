@@ -1,0 +1,51 @@
+@model ConpuGroupMedical.Models.Grup_Tanimi;
+<!DOCTYPE html>
+@{
+    ViewData["Title"] = "Grup_Ekle";
+}
+<html>
+    <head>
+
+    </head>
+    <body>
+        <h1>Grup Ekleme Sayfası</h1>
+        <br>
+         @using (Html.BeginForm("GrupEkle","Home", FormMethod.Post))
+            {
+
+                <br>
+                <br>
+            <tr>
+                <td>Grup Kodu</td>
+                <td>
+                    @Html.TextBoxFor(m => m.Grup_Kodu)
+                </td>
+            </tr>  
+
+            <br>
+            <br>
+
+            <tr>
+                <td>Grup Adı </td>
+                <td>
+                    @Html.TextBoxFor(m => m.Grup_Adi)
+                </td>
+            </tr>
+
+            
+           <br>
+           <br>
+
+            <button type="submit" id="save" class="btn btn-primary"  >Yeni Grup Bilgilerini Kaydet</button>
+            
+            <br>
+            <br>
+
+            }
+
+            <div> 
+            <a asp-action="Grup_Islemleri">Grup Listesine Geri Dön</a> 
+            </div> 
+
+    </body>
+</html>

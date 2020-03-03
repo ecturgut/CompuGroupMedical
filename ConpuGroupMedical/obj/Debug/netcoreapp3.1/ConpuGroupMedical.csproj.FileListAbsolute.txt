@@ -1,0 +1,140 @@
+C:\Users\cemre\Desktop\cgm\ConpuGroupMedical\bin\Debug\netcoreapp3.1\appsettings.Development.json
+C:\Users\cemre\Desktop\cgm\ConpuGroupMedical\bin\Debug\netcoreapp3.1\appsettings.json
+C:\Users\cemre\Desktop\cgm\ConpuGroupMedical\bin\Debug\netcoreapp3.1\Properties\launchSettings.json
+C:\Users\cemre\Desktop\cgm\ConpuGroupMedical\bin\Debug\netcoreapp3.1\ConpuGroupMedical.exe
+C:\Users\cemre\Desktop\cgm\ConpuGroupMedical\bin\Debug\netcoreapp3.1\ConpuGroupMedical.deps.json
+C:\Users\cemre\Desktop\cgm\ConpuGroupMedical\bin\Debug\netcoreapp3.1\ConpuGroupMedical.runtimeconfig.json
+C:\Users\cemre\Desktop\cgm\ConpuGroupMedical\bin\Debug\netcoreapp3.1\ConpuGroupMedical.runtimeconfig.dev.json
+C:\Users\cemre\Desktop\cgm\ConpuGroupMedical\bin\Debug\netcoreapp3.1\ConpuGroupMedical.dll
+C:\Users\cemre\Desktop\cgm\ConpuGroupMedical\bin\Debug\netcoreapp3.1\ConpuGroupMedical.pdb
+C:\Users\cemre\Desktop\cgm\ConpuGroupMedical\bin\Debug\netcoreapp3.1\ConpuGroupMedical.Views.dll
+C:\Users\cemre\Desktop\cgm\ConpuGroupMedical\bin\Debug\netcoreapp3.1\ConpuGroupMedical.Views.pdb
+C:\Users\cemre\Desktop\cgm\ConpuGroupMedical\obj\Debug\netcoreapp3.1\ConpuGroupMedical.csprojAssemblyReference.cache
+C:\Users\cemre\Desktop\cgm\ConpuGroupMedical\obj\Debug\netcoreapp3.1\staticwebassets\ConpuGroupMedical.StaticWebAssets.Manifest.cache
+C:\Users\cemre\Desktop\cgm\ConpuGroupMedical\obj\Debug\netcoreapp3.1\staticwebassets\ConpuGroupMedical.StaticWebAssets.xml
+C:\Users\cemre\Desktop\cgm\ConpuGroupMedical\obj\Debug\netcoreapp3.1\ConpuGroupMedical.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\cemre\Desktop\cgm\ConpuGroupMedical\obj\Debug\netcoreapp3.1\ConpuGroupMedical.RazorAssemblyInfo.cache
+C:\Users\cemre\Desktop\cgm\ConpuGroupMedical\obj\Debug\netcoreapp3.1\ConpuGroupMedical.RazorAssemblyInfo.cs
+C:\Users\cemre\Desktop\cgm\ConpuGroupMedical\obj\Debug\netcoreapp3.1\ConpuGroupMedical.AssemblyInfoInputs.cache
+C:\Users\cemre\Desktop\cgm\ConpuGroupMedical\obj\Debug\netcoreapp3.1\ConpuGroupMedical.AssemblyInfo.cs
+C:\Users\cemre\Desktop\cgm\ConpuGroupMedical\obj\Debug\netcoreapp3.1\ConpuGroupMedical.TagHelpers.input.cache
+C:\Users\cemre\Desktop\cgm\ConpuGroupMedical\obj\Debug\netcoreapp3.1\ConpuGroupMedical.TagHelpers.output.cache
+C:\Users\cemre\Desktop\cgm\ConpuGroupMedical\obj\Debug\netcoreapp3.1\ConpuGroupMedical.RazorCoreGenerate.cache
+C:\Users\cemre\Desktop\cgm\ConpuGroupMedical\obj\Debug\netcoreapp3.1\Razor\Views\Home\Index.cshtml.g.cs
+C:\Users\cemre\Desktop\cgm\ConpuGroupMedical\obj\Debug\netcoreapp3.1\Razor\Views\Shared\Error.cshtml.g.cs
+C:\Users\cemre\Desktop\cgm\ConpuGroupMedical\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_Layout.cshtml.g.cs
+C:\Users\cemre\Desktop\cgm\ConpuGroupMedical\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_ValidationScriptsPartial.cshtml.g.cs
+C:\Users\cemre\Desktop\cgm\ConpuGroupMedical\obj\Debug\netcoreapp3.1\Razor\Views\_ViewImports.cshtml.g.cs
+C:\Users\cemre\Desktop\cgm\ConpuGroupMedical\obj\Debug\netcoreapp3.1\Razor\Views\_ViewStart.cshtml.g.cs
+C:\Users\cemre\Desktop\cgm\ConpuGroupMedical\obj\Debug\netcoreapp3.1\ConpuGroupMedical.RazorTargetAssemblyInfo.cache
+C:\Users\cemre\Desktop\cgm\ConpuGroupMedical\obj\Debug\netcoreapp3.1\ConpuGroupMedical.RazorTargetAssemblyInfo.cs
+C:\Users\cemre\Desktop\cgm\ConpuGroupMedical\obj\Debug\netcoreapp3.1\ConpuGroupMedical.Views.pdb
+C:\Users\cemre\Desktop\cgm\ConpuGroupMedical\obj\Debug\netcoreapp3.1\ConpuGroupMedical.dll
+C:\Users\cemre\Desktop\cgm\ConpuGroupMedical\obj\Debug\netcoreapp3.1\ConpuGroupMedical.pdb
+C:\Users\cemre\Desktop\cgm\ConpuGroupMedical\obj\Debug\netcoreapp3.1\ConpuGroupMedical.csproj.CopyComplete
+C:\Users\cemre\Desktop\cgm\ConpuGroupMedical\obj\Debug\netcoreapp3.1\Razor\Views\Home\Hastaneler.cshtml.g.cs
+C:\Users\cemre\Desktop\cgm\ConpuGroupMedical\obj\Debug\netcoreapp3.1\Razor\Views\Home\Sigortalar.cshtml.g.cs
+C:\Users\cemre\Desktop\cgm\ConpuGroupMedical\obj\Debug\netcoreapp3.1\Razor\Views\Home\Gruplar.cshtml.g.cs
+C:\Users\cemre\Desktop\BİLGİLER\cgm\ConpuGroupMedical\bin\Debug\netcoreapp3.1\appsettings.Development.json
+C:\Users\cemre\Desktop\BİLGİLER\cgm\ConpuGroupMedical\bin\Debug\netcoreapp3.1\appsettings.json
+C:\Users\cemre\Desktop\BİLGİLER\cgm\ConpuGroupMedical\bin\Debug\netcoreapp3.1\Properties\launchSettings.json
+C:\Users\cemre\Desktop\BİLGİLER\cgm\ConpuGroupMedical\bin\Debug\netcoreapp3.1\ConpuGroupMedical.exe
+C:\Users\cemre\Desktop\BİLGİLER\cgm\ConpuGroupMedical\bin\Debug\netcoreapp3.1\ConpuGroupMedical.deps.json
+C:\Users\cemre\Desktop\BİLGİLER\cgm\ConpuGroupMedical\bin\Debug\netcoreapp3.1\ConpuGroupMedical.runtimeconfig.json
+C:\Users\cemre\Desktop\BİLGİLER\cgm\ConpuGroupMedical\bin\Debug\netcoreapp3.1\ConpuGroupMedical.runtimeconfig.dev.json
+C:\Users\cemre\Desktop\BİLGİLER\cgm\ConpuGroupMedical\bin\Debug\netcoreapp3.1\ConpuGroupMedical.dll
+C:\Users\cemre\Desktop\BİLGİLER\cgm\ConpuGroupMedical\bin\Debug\netcoreapp3.1\ConpuGroupMedical.pdb
+C:\Users\cemre\Desktop\BİLGİLER\cgm\ConpuGroupMedical\bin\Debug\netcoreapp3.1\ConpuGroupMedical.Views.dll
+C:\Users\cemre\Desktop\BİLGİLER\cgm\ConpuGroupMedical\bin\Debug\netcoreapp3.1\ConpuGroupMedical.Views.pdb
+C:\Users\cemre\Desktop\BİLGİLER\cgm\ConpuGroupMedical\obj\Debug\netcoreapp3.1\ConpuGroupMedical.csprojAssemblyReference.cache
+C:\Users\cemre\Desktop\BİLGİLER\cgm\ConpuGroupMedical\obj\Debug\netcoreapp3.1\staticwebassets\ConpuGroupMedical.StaticWebAssets.Manifest.cache
+C:\Users\cemre\Desktop\BİLGİLER\cgm\ConpuGroupMedical\obj\Debug\netcoreapp3.1\staticwebassets\ConpuGroupMedical.StaticWebAssets.xml
+C:\Users\cemre\Desktop\BİLGİLER\cgm\ConpuGroupMedical\obj\Debug\netcoreapp3.1\ConpuGroupMedical.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\cemre\Desktop\BİLGİLER\cgm\ConpuGroupMedical\obj\Debug\netcoreapp3.1\ConpuGroupMedical.RazorAssemblyInfo.cache
+C:\Users\cemre\Desktop\BİLGİLER\cgm\ConpuGroupMedical\obj\Debug\netcoreapp3.1\ConpuGroupMedical.RazorAssemblyInfo.cs
+C:\Users\cemre\Desktop\BİLGİLER\cgm\ConpuGroupMedical\obj\Debug\netcoreapp3.1\ConpuGroupMedical.AssemblyInfoInputs.cache
+C:\Users\cemre\Desktop\BİLGİLER\cgm\ConpuGroupMedical\obj\Debug\netcoreapp3.1\ConpuGroupMedical.AssemblyInfo.cs
+C:\Users\cemre\Desktop\BİLGİLER\cgm\ConpuGroupMedical\obj\Debug\netcoreapp3.1\ConpuGroupMedical.TagHelpers.input.cache
+C:\Users\cemre\Desktop\BİLGİLER\cgm\ConpuGroupMedical\obj\Debug\netcoreapp3.1\ConpuGroupMedical.TagHelpers.output.cache
+C:\Users\cemre\Desktop\BİLGİLER\cgm\ConpuGroupMedical\obj\Debug\netcoreapp3.1\ConpuGroupMedical.RazorCoreGenerate.cache
+C:\Users\cemre\Desktop\BİLGİLER\cgm\ConpuGroupMedical\obj\Debug\netcoreapp3.1\Razor\Views\Home\Gruplar.cshtml.g.cs
+C:\Users\cemre\Desktop\BİLGİLER\cgm\ConpuGroupMedical\obj\Debug\netcoreapp3.1\Razor\Views\Home\Hastaneler.cshtml.g.cs
+C:\Users\cemre\Desktop\BİLGİLER\cgm\ConpuGroupMedical\obj\Debug\netcoreapp3.1\Razor\Views\Home\Index.cshtml.g.cs
+C:\Users\cemre\Desktop\BİLGİLER\cgm\ConpuGroupMedical\obj\Debug\netcoreapp3.1\Razor\Views\Home\Sigortalar.cshtml.g.cs
+C:\Users\cemre\Desktop\BİLGİLER\cgm\ConpuGroupMedical\obj\Debug\netcoreapp3.1\Razor\Views\Shared\Error.cshtml.g.cs
+C:\Users\cemre\Desktop\BİLGİLER\cgm\ConpuGroupMedical\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_Layout.cshtml.g.cs
+C:\Users\cemre\Desktop\BİLGİLER\cgm\ConpuGroupMedical\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_ValidationScriptsPartial.cshtml.g.cs
+C:\Users\cemre\Desktop\BİLGİLER\cgm\ConpuGroupMedical\obj\Debug\netcoreapp3.1\Razor\Views\_ViewImports.cshtml.g.cs
+C:\Users\cemre\Desktop\BİLGİLER\cgm\ConpuGroupMedical\obj\Debug\netcoreapp3.1\Razor\Views\_ViewStart.cshtml.g.cs
+C:\Users\cemre\Desktop\BİLGİLER\cgm\ConpuGroupMedical\obj\Debug\netcoreapp3.1\ConpuGroupMedical.RazorTargetAssemblyInfo.cache
+C:\Users\cemre\Desktop\BİLGİLER\cgm\ConpuGroupMedical\obj\Debug\netcoreapp3.1\ConpuGroupMedical.RazorTargetAssemblyInfo.cs
+C:\Users\cemre\Desktop\BİLGİLER\cgm\ConpuGroupMedical\obj\Debug\netcoreapp3.1\ConpuGroupMedical.Views.pdb
+C:\Users\cemre\Desktop\BİLGİLER\cgm\ConpuGroupMedical\obj\Debug\netcoreapp3.1\ConpuGroupMedical.dll
+C:\Users\cemre\Desktop\BİLGİLER\cgm\ConpuGroupMedical\obj\Debug\netcoreapp3.1\ConpuGroupMedical.pdb
+C:\Users\cemre\Desktop\BİLGİLER\cgm\ConpuGroupMedical\obj\Debug\netcoreapp3.1\ConpuGroupMedical.csproj.CopyComplete
+C:\Users\cemre\Desktop\BİLGİLER\cgm\ConpuGroupMedical\bin\Debug\netcoreapp3.1\SqlServerConnections.dll
+C:\Users\cemre\Desktop\BİLGİLER\cgm\ConpuGroupMedical\bin\Debug\netcoreapp3.1\System.Data.SqlClient.dll
+C:\Users\cemre\Desktop\BİLGİLER\cgm\ConpuGroupMedical\bin\Debug\netcoreapp3.1\runtimes\win-arm64\native\sni.dll
+C:\Users\cemre\Desktop\BİLGİLER\cgm\ConpuGroupMedical\bin\Debug\netcoreapp3.1\runtimes\win-x64\native\sni.dll
+C:\Users\cemre\Desktop\BİLGİLER\cgm\ConpuGroupMedical\bin\Debug\netcoreapp3.1\runtimes\win-x86\native\sni.dll
+C:\Users\cemre\Desktop\BİLGİLER\cgm\ConpuGroupMedical\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\cemre\Desktop\BİLGİLER\cgm\ConpuGroupMedical\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\cemre\Desktop\BİLGİLER\cgm\ConpuGroupMedical\bin\Debug\netcoreapp3.1\Dapper.dll
+C:\Users\cemre\Desktop\BİLGİLER\cgm\ConpuGroupMedical\obj\Debug\netcoreapp3.1\Razor\Views\Home\Hastane_İslemleri.cshtml.g.cs
+C:\Users\cemre\Desktop\BİLGİLER\Dersler\Visual Studio Code Projects\cgm\ConpuGroupMedical\obj\Debug\netcoreapp3.1\ConpuGroupMedical.csprojAssemblyReference.cache
+C:\Users\cemre\Desktop\BİLGİLER\Dersler\Visual Studio Code Projects\cgm\ConpuGroupMedical\obj\Debug\netcoreapp3.1\staticwebassets\ConpuGroupMedical.StaticWebAssets.Manifest.cache
+C:\Users\cemre\Desktop\BİLGİLER\Dersler\Visual Studio Code Projects\cgm\ConpuGroupMedical\obj\Debug\netcoreapp3.1\staticwebassets\ConpuGroupMedical.StaticWebAssets.xml
+C:\Users\cemre\Desktop\BİLGİLER\Dersler\Visual Studio Code Projects\cgm\ConpuGroupMedical\obj\Debug\netcoreapp3.1\ConpuGroupMedical.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\cemre\Desktop\BİLGİLER\Dersler\Visual Studio Code Projects\cgm\ConpuGroupMedical\obj\Debug\netcoreapp3.1\ConpuGroupMedical.RazorAssemblyInfo.cache
+C:\Users\cemre\Desktop\BİLGİLER\Dersler\Visual Studio Code Projects\cgm\ConpuGroupMedical\obj\Debug\netcoreapp3.1\ConpuGroupMedical.RazorAssemblyInfo.cs
+C:\Users\cemre\Desktop\BİLGİLER\Dersler\Visual Studio Code Projects\cgm\ConpuGroupMedical\obj\Debug\netcoreapp3.1\ConpuGroupMedical.AssemblyInfoInputs.cache
+C:\Users\cemre\Desktop\BİLGİLER\Dersler\Visual Studio Code Projects\cgm\ConpuGroupMedical\obj\Debug\netcoreapp3.1\ConpuGroupMedical.AssemblyInfo.cs
+C:\Users\cemre\Desktop\BİLGİLER\Dersler\Visual Studio Code Projects\cgm\ConpuGroupMedical\obj\Debug\netcoreapp3.1\ConpuGroupMedical.TagHelpers.input.cache
+C:\Users\cemre\Desktop\BİLGİLER\Dersler\Visual Studio Code Projects\cgm\ConpuGroupMedical\obj\Debug\netcoreapp3.1\ConpuGroupMedical.TagHelpers.output.cache
+C:\Users\cemre\Desktop\BİLGİLER\Dersler\Visual Studio Code Projects\cgm\ConpuGroupMedical\obj\Debug\netcoreapp3.1\ConpuGroupMedical.RazorCoreGenerate.cache
+C:\Users\cemre\Desktop\BİLGİLER\Dersler\Visual Studio Code Projects\cgm\ConpuGroupMedical\obj\Debug\netcoreapp3.1\Razor\Views\Home\Index.cshtml.g.cs
+C:\Users\cemre\Desktop\BİLGİLER\Dersler\Visual Studio Code Projects\cgm\ConpuGroupMedical\obj\Debug\netcoreapp3.1\Razor\Views\Shared\Error.cshtml.g.cs
+C:\Users\cemre\Desktop\BİLGİLER\Dersler\Visual Studio Code Projects\cgm\ConpuGroupMedical\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_Layout.cshtml.g.cs
+C:\Users\cemre\Desktop\BİLGİLER\Dersler\Visual Studio Code Projects\cgm\ConpuGroupMedical\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_ValidationScriptsPartial.cshtml.g.cs
+C:\Users\cemre\Desktop\BİLGİLER\Dersler\Visual Studio Code Projects\cgm\ConpuGroupMedical\obj\Debug\netcoreapp3.1\Razor\Views\_ViewImports.cshtml.g.cs
+C:\Users\cemre\Desktop\BİLGİLER\Dersler\Visual Studio Code Projects\cgm\ConpuGroupMedical\obj\Debug\netcoreapp3.1\Razor\Views\_ViewStart.cshtml.g.cs
+C:\Users\cemre\Desktop\BİLGİLER\Dersler\Visual Studio Code Projects\cgm\ConpuGroupMedical\obj\Debug\netcoreapp3.1\ConpuGroupMedical.RazorTargetAssemblyInfo.cache
+C:\Users\cemre\Desktop\BİLGİLER\Dersler\Visual Studio Code Projects\cgm\ConpuGroupMedical\obj\Debug\netcoreapp3.1\ConpuGroupMedical.RazorTargetAssemblyInfo.cs
+C:\Users\cemre\Desktop\BİLGİLER\Dersler\Visual Studio Code Projects\cgm\ConpuGroupMedical\obj\Debug\netcoreapp3.1\ConpuGroupMedical.dll
+C:\Users\cemre\Desktop\BİLGİLER\Dersler\Visual Studio Code Projects\cgm\ConpuGroupMedical\obj\Debug\netcoreapp3.1\ConpuGroupMedical.pdb
+C:\Users\cemre\Desktop\BİLGİLER\Dersler\Visual Studio Code Projects\cgm\ConpuGroupMedical\bin\Debug\netcoreapp3.1\appsettings.Development.json
+C:\Users\cemre\Desktop\BİLGİLER\Dersler\Visual Studio Code Projects\cgm\ConpuGroupMedical\bin\Debug\netcoreapp3.1\appsettings.json
+C:\Users\cemre\Desktop\BİLGİLER\Dersler\Visual Studio Code Projects\cgm\ConpuGroupMedical\bin\Debug\netcoreapp3.1\Properties\launchSettings.json
+C:\Users\cemre\Desktop\BİLGİLER\Dersler\Visual Studio Code Projects\cgm\ConpuGroupMedical\bin\Debug\netcoreapp3.1\ConpuGroupMedical.exe
+C:\Users\cemre\Desktop\BİLGİLER\Dersler\Visual Studio Code Projects\cgm\ConpuGroupMedical\bin\Debug\netcoreapp3.1\ConpuGroupMedical.deps.json
+C:\Users\cemre\Desktop\BİLGİLER\Dersler\Visual Studio Code Projects\cgm\ConpuGroupMedical\bin\Debug\netcoreapp3.1\ConpuGroupMedical.runtimeconfig.json
+C:\Users\cemre\Desktop\BİLGİLER\Dersler\Visual Studio Code Projects\cgm\ConpuGroupMedical\bin\Debug\netcoreapp3.1\ConpuGroupMedical.runtimeconfig.dev.json
+C:\Users\cemre\Desktop\BİLGİLER\Dersler\Visual Studio Code Projects\cgm\ConpuGroupMedical\bin\Debug\netcoreapp3.1\ConpuGroupMedical.dll
+C:\Users\cemre\Desktop\BİLGİLER\Dersler\Visual Studio Code Projects\cgm\ConpuGroupMedical\bin\Debug\netcoreapp3.1\ConpuGroupMedical.pdb
+C:\Users\cemre\Desktop\BİLGİLER\Dersler\Visual Studio Code Projects\cgm\ConpuGroupMedical\bin\Debug\netcoreapp3.1\ConpuGroupMedical.Views.dll
+C:\Users\cemre\Desktop\BİLGİLER\Dersler\Visual Studio Code Projects\cgm\ConpuGroupMedical\bin\Debug\netcoreapp3.1\ConpuGroupMedical.Views.pdb
+C:\Users\cemre\Desktop\BİLGİLER\Dersler\Visual Studio Code Projects\cgm\ConpuGroupMedical\bin\Debug\netcoreapp3.1\Dapper.dll
+C:\Users\cemre\Desktop\BİLGİLER\Dersler\Visual Studio Code Projects\cgm\ConpuGroupMedical\bin\Debug\netcoreapp3.1\SqlServerConnections.dll
+C:\Users\cemre\Desktop\BİLGİLER\Dersler\Visual Studio Code Projects\cgm\ConpuGroupMedical\bin\Debug\netcoreapp3.1\System.Data.SqlClient.dll
+C:\Users\cemre\Desktop\BİLGİLER\Dersler\Visual Studio Code Projects\cgm\ConpuGroupMedical\bin\Debug\netcoreapp3.1\runtimes\win-arm64\native\sni.dll
+C:\Users\cemre\Desktop\BİLGİLER\Dersler\Visual Studio Code Projects\cgm\ConpuGroupMedical\bin\Debug\netcoreapp3.1\runtimes\win-x64\native\sni.dll
+C:\Users\cemre\Desktop\BİLGİLER\Dersler\Visual Studio Code Projects\cgm\ConpuGroupMedical\bin\Debug\netcoreapp3.1\runtimes\win-x86\native\sni.dll
+C:\Users\cemre\Desktop\BİLGİLER\Dersler\Visual Studio Code Projects\cgm\ConpuGroupMedical\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\cemre\Desktop\BİLGİLER\Dersler\Visual Studio Code Projects\cgm\ConpuGroupMedical\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\cemre\Desktop\BİLGİLER\Dersler\Visual Studio Code Projects\cgm\ConpuGroupMedical\obj\Debug\netcoreapp3.1\ConpuGroupMedical.Views.pdb
+C:\Users\cemre\Desktop\BİLGİLER\Dersler\Visual Studio Code Projects\cgm\ConpuGroupMedical\obj\Debug\netcoreapp3.1\ConpuGroupMedical.csproj.CopyComplete
+C:\Users\cemre\Desktop\BİLGİLER\Dersler\Visual Studio Code Projects\cgm\ConpuGroupMedical\obj\Debug\netcoreapp3.1\Razor\Views\Home\Hastaneler.cshtml.g.cs
+C:\Users\cemre\Desktop\BİLGİLER\Dersler\Visual Studio Code Projects\cgm\ConpuGroupMedical\obj\Debug\netcoreapp3.1\Razor\Views\Home\Gruplar.cshtml.g.cs
+C:\Users\cemre\Desktop\BİLGİLER\Dersler\Visual Studio Code Projects\cgm\ConpuGroupMedical\obj\Debug\netcoreapp3.1\Razor\Views\Home\Sigortalar.cshtml.g.cs
+C:\Users\cemre\Desktop\BİLGİLER\Dersler\Visual Studio Code Projects\cgm\ConpuGroupMedical\obj\Debug\netcoreapp3.1\Razor\Views\Home\Hastane_Islemleri.cshtml.g.cs
+C:\Users\cemre\Desktop\BİLGİLER\Dersler\Visual Studio Code Projects\cgm\ConpuGroupMedical\obj\Debug\netcoreapp3.1\Razor\Views\Home\Grup_Islemleri.cshtml.g.cs
+C:\Users\cemre\Desktop\BİLGİLER\Dersler\Visual Studio Code Projects\cgm\ConpuGroupMedical\obj\Debug\netcoreapp3.1\Razor\Views\Home\Sigorta_Islemleri.cshtml.g.cs
+C:\Users\cemre\Desktop\BİLGİLER\Dersler\Visual Studio Code Projects\cgm\ConpuGroupMedical\obj\Debug\netcoreapp3.1\Razor\Views\Home\HastaneDuzenle.cshtml.g.cs
+C:\Users\cemre\Desktop\BİLGİLER\Dersler\Visual Studio Code Projects\cgm\ConpuGroupMedical\obj\Debug\netcoreapp3.1\Razor\Views\Home\SigortaDuzenle.cshtml.g.cs
+C:\Users\cemre\Desktop\BİLGİLER\Dersler\Visual Studio Code Projects\cgm\ConpuGroupMedical\obj\Debug\netcoreapp3.1\Razor\Views\Home\GrupDuzenle.cshtml.g.cs
+C:\Users\cemre\Desktop\BİLGİLER\Dersler\Visual Studio Code Projects\cgm\ConpuGroupMedical\obj\Debug\netcoreapp3.1\Razor\Views\Home\HastaneEkle.cshtml.g.cs
+C:\Users\cemre\Desktop\BİLGİLER\Dersler\Visual Studio Code Projects\cgm\ConpuGroupMedical\obj\Debug\netcoreapp3.1\Razor\Views\Home\GrupEkle.cshtml.g.cs
+C:\Users\cemre\Desktop\BİLGİLER\Dersler\Visual Studio Code Projects\cgm\ConpuGroupMedical\obj\Debug\netcoreapp3.1\Razor\Views\Home\SigortaEkle.cshtml.g.cs
+C:\Users\cemre\Desktop\BİLGİLER\Dersler\Visual Studio Code Projects\cgm\ConpuGroupMedical\obj\Debug\netcoreapp3.1\Razor\Views\Home\GrupSil.cshtml.g.cs
+C:\Users\cemre\Desktop\BİLGİLER\Dersler\Visual Studio Code Projects\cgm\ConpuGroupMedical\obj\Debug\netcoreapp3.1\Razor\Views\Home\HastaneSil.cshtml.g.cs
+C:\Users\cemre\Desktop\BİLGİLER\Dersler\Visual Studio Code Projects\cgm\ConpuGroupMedical\obj\Debug\netcoreapp3.1\Razor\Views\Home\SigortaSil.cshtml.g.cs

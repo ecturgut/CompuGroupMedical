@@ -1,0 +1,52 @@
+@{
+    ViewData["Title"] = "Sigortalar";
+}
+<br>
+<h1>@ViewData["Title"]</h1>
+<br>
+<html>
+
+<head>
+
+<title>CGM | Hastaneler</title>
+<link rel="stylesheet" href="~/css/style.css" />
+<link rel="stylesheet" href="~/css/boostrap.min.css" />
+<link rel="stylesheet" href="~/css/font-awesome.min.css" />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto|Varela+Round">
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+</head>
+
+<body>
+
+            <br>
+                <label for="SigoSrktId">Sigorta Seçiniz</label><br>
+                <select class="form-control" id="SigoSrktId" name="SigoSrktId">
+                <option selected disabled>----------------- Lütfen Sigorta Şirketini Seçiniz -----------------</option> 
+                <option>Şirket1</option>
+                <option>Şirket2</option>
+                <option>Şirket3</option>
+                <option>Şirket4</option> 
+                </select>
+             <br>
+
+<br>
+
+<br>
+<fieldset>Fonksiyon Giriniz
+<input class="form-control" 
+        id="myTextBox" 
+        name="myTextBox" 
+        type="text" 
+        value="" />
+</fieldset>  
+<br>
+<br>
+<p><input type="submit" value="Girilen Bilgileri Kaydet" id="kaydet"/> </p>
+
+<script src="~/lib/jquery/dist/jquery.min.js"></script>
+<script src="~/js/boostrap.min.js"></script>
+
+</body>
+
+</html>
