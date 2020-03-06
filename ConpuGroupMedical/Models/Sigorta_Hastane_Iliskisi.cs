@@ -15,5 +15,6 @@ public int Hastane_Id { get; set; }
 public int Sigorta_Id { get; set; }
 
 }
+//test
 
 }
