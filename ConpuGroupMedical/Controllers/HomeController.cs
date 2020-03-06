@@ -68,6 +68,13 @@ namespace ConpuGroupMedical.Controllers
             var result = _dbConnection.Query("select * from Sigorta", null, commandType: CommandType.Text); 
             return View(result);
         }
+        public IActionResult SigortaFonksiyonları()
+        {
+            var result = _dbConnection.Query("select * from SigortaFonksiyonları", null, commandType: CommandType.Text); 
+            ViewBag.SigortaFonk = new SelectList(result.ToList(),"Id","Sigorta_Adi","Fonksiyon_Adi");
+   
+            return View();
+        }
         public IActionResult Hastaneler()
         {
             var result = _dbConnection.Query("select * from hastane", null, commandType: CommandType.Text); 

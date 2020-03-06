@@ -20501,6 +20501,11 @@
   "RootNamespace": "ConpuGroupMedical",
   "Documents": [
     {
+      "FilePath": "c:\\Users\\cemre\\Desktop\\BİLGİLER\\Dersler\\Visual Studio Code Projects\\cgm\\ConpuGroupMedical\\Views\\Home\\SigortaFonksiyonları.cshtml",
+      "TargetPath": "Views\\Home\\SigortaFonksiyonları.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "c:\\Users\\cemre\\Desktop\\BİLGİLER\\Dersler\\Visual Studio Code Projects\\cgm\\ConpuGroupMedical\\Views\\Home\\SigortaDuzenle.cshtml",
       "TargetPath": "Views\\Home\\SigortaDuzenle.cshtml",
       "FileKind": "mvc"

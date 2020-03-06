@@ -143,3 +143,4 @@ C:\Users\cemre\Desktop\BİLGİLER\Dersler\Visual Studio Code Projects\cgm\ConpuG
 C:\Users\cemre\Desktop\BİLGİLER\Dersler\Visual Studio Code Projects\cgm\ConpuGroupMedical\obj\Debug\netcoreapp3.1\Razor\Views\Home\FonksiyonDuzenle.cshtml.g.cs
 C:\Users\cemre\Desktop\BİLGİLER\Dersler\Visual Studio Code Projects\cgm\ConpuGroupMedical\obj\Debug\netcoreapp3.1\Razor\Views\Home\FonksiyonSil.cshtml.g.cs
 C:\Users\cemre\Desktop\BİLGİLER\Dersler\Visual Studio Code Projects\cgm\ConpuGroupMedical\obj\Debug\netcoreapp3.1\Razor\Views\Home\FonksiyonEkle.cshtml.g.cs
+C:\Users\cemre\Desktop\BİLGİLER\Dersler\Visual Studio Code Projects\cgm\ConpuGroupMedical\obj\Debug\netcoreapp3.1\Razor\Views\Home\SigortaFonksiyonları.cshtml.g.cs
