@@ -16,10 +16,7 @@ public string Hastane_Telefon { get; set; }
 public string Hastene_Adres { get; set; }
 public int  Bagli_Oldugu_Grup_Id { get; set; }
 
-        internal static IEnumerable<object> GetAll()
-        {
-            throw new NotImplementedException();
-        }
+
     }
 
 }

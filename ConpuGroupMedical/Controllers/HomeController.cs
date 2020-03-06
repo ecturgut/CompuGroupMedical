@@ -33,18 +33,34 @@ namespace ConpuGroupMedical.Controllers
         {
             return View();
         }
-
-        public IActionResult Gruplar()
+        public IActionResult Fonksiyonlar()
         {
+            var result = _dbConnection.Query("select * from Fonksiyonlar", null, commandType: CommandType.Text); 
+            ViewBag.Fonksiyons = new SelectList(result.ToList(), "Id","Fonksiyon_Adi");
             return View();
         }
-         public IActionResult Grup_Islemleri()
+        public IActionResult Gruplar()
+        { 
+            var result = _dbConnection.Query("select * from Grup_Tanımı", null, commandType: CommandType.Text); 
+
+            ViewBag.Groups = new SelectList(result.ToList(), "Grup_Kodu", "Grup_Adi");
+            return View();
+
+        }
+        public IActionResult Fonksiyon_Islemleri()
+        {
+            var result = _dbConnection.Query("select * from Fonksiyonlar", null, commandType: CommandType.Text); 
+            return View(result);
+        }
+        public IActionResult Grup_Islemleri()
         {
             var result = _dbConnection.Query("select * from Grup_Tanımı", null, commandType: CommandType.Text); 
             return View(result);
         }
         public IActionResult Sigortalar()
         {
+            var result = _dbConnection.Query("select * from Sigorta", null, commandType: CommandType.Text); 
+            ViewBag.Sigortas = new SelectList(result.ToList(), "Id","Sigorta_Adi");
             return View();
         }
          public IActionResult Sigorta_Islemleri()
@@ -54,8 +70,13 @@ namespace ConpuGroupMedical.Controllers
         }
         public IActionResult Hastaneler()
         {
+            var result = _dbConnection.Query("select * from hastane", null, commandType: CommandType.Text); 
+            ViewBag.Hastanes = new SelectList(result.ToList(), "Id","Hastane_Adi");
+   
             return View();
+
         }
+
         public IActionResult Hastane_Islemleri()
         {
            var result = _dbConnection.Query("select * from hastane", null, commandType: CommandType.Text); 
@@ -147,14 +168,77 @@ public ActionResult GrupSil(int id)
             }
             return View(grup);
  }
-        public IActionResult SilIslemi(int id){
-        
-            var delete = _dbConnection.Query("delete from Hastane where Id='"+ id +"'" );
-            
-            return RedirectToAction("Hastane_Islemleri","Home");
-        }
+ public ActionResult FonksiyonSil(int id)
+ {
+ string connectionString = this.Configuration.GetConnectionString("appDbConnection");
 
+            Grup_Tanimi grup = new Grup_Tanimi();
+            using (SqlConnection connection = new SqlConnection(connectionString))
+            {
+                string sql = $"Delete From Fonksiyonlar Where Id='"+ id +"'";
+                SqlCommand command = new SqlCommand(sql, connection);
+
+                connection.Open();
+
+                using (SqlDataReader dataReader = command.ExecuteReader())
+                {
+                    while (dataReader.Read())
+                    {
+                    grup.Id = Convert.ToInt32(dataReader["Id"]);
+                    grup.Grup_Adi = Convert.ToString(dataReader["Fonksiyon_Adi"]);
+                    grup.Grup_Kodu = Convert.ToInt32(dataReader["Fonksiyon_Kodu"]);
+                    }
+                }
+
+                connection.Close();
+            }
+            return View(grup);
+ }
+      
+        public IActionResult FonksiyonDuzenle(int id)
+        {
+          string connectionString = this.Configuration.GetConnectionString("appDbConnection");
+
+            Fonksiyonlar fnk = new Fonksiyonlar();
+            using (SqlConnection connection = new SqlConnection(connectionString))
+            {
+                string sql = $"Select * From Fonksiyonlar Where Id='{id}'";
+                SqlCommand command = new SqlCommand(sql, connection);
+
+                connection.Open();
+
+                using (SqlDataReader dataReader = command.ExecuteReader())
+                {
+                    while (dataReader.Read())
+                    {   
+                    fnk.Id = Convert.ToInt32(dataReader["Id"]);
+                    fnk.Fonksiyon_Adi  = Convert.ToString(dataReader["Fonksiyon_Adi"]);
+                    fnk.Fonksiyon_Kodu = Convert.ToInt32(dataReader["Fonksiyon_Kodu"]);
+                    }
+                }
+
+                connection.Close();
+            }
+            return View(fnk);
+        }
         
+        [HttpPost]
+        public IActionResult FonksiyonDuzenle(Fonksiyonlar fnk)
+        {
+             string connectionString = this.Configuration.GetConnectionString("appDbConnection");
+            using (SqlConnection connection = new SqlConnection(connectionString))
+            {
+                string sql = $"Update Fonksiyonlar SET Fonksiyon_Adi='"+ fnk.Fonksiyon_Adi + "', Fonksiyon_Kodu='" + fnk.Fonksiyon_Kodu +"' Where Id="+fnk.Id;
+                using (SqlCommand command = new SqlCommand(sql, connection))
+                {
+                    connection.Open();
+                    command.ExecuteNonQuery();
+                    connection.Close();
+                }
+            }
+
+            return RedirectToAction("Fonksiyon_Islemleri");
+        }
         public IActionResult HastaneDuzenle(int id)
         {
           string connectionString = this.Configuration.GetConnectionString("appDbConnection");
@@ -170,12 +254,11 @@ public ActionResult GrupSil(int id)
                 using (SqlDataReader dataReader = command.ExecuteReader())
                 {
                     while (dataReader.Read())
-                    {
-                    
+                    {   
                     hastane.Id = Convert.ToInt32(dataReader["Id"]);
                     hastane.Tesis_Kodu = Convert.ToInt32(dataReader["Tesis_Kodu"]);
                     hastane.Hastane_Adi = Convert.ToString(dataReader["Hastane_Adi"]);
-                    hastane.Hastene_Adres = Convert.ToString(dataReader["Hastene_Adres"]);
+                    hastane.Hastene_Adres = Convert.ToString(dataReader["Hastane_Adres"]);
                     hastane.Hastane_Telefon = Convert.ToString(dataReader["Hastane_Telefon"]);
                     hastane.Bagli_Oldugu_Grup_Id = Convert.ToInt32(dataReader["Bagli_Oldugu_Grup_Id"]);
                     }
@@ -192,7 +275,7 @@ public ActionResult GrupSil(int id)
              string connectionString = this.Configuration.GetConnectionString("appDbConnection");
             using (SqlConnection connection = new SqlConnection(connectionString))
             {
-                string sql = $"Update Hastane SET TesisKodu='"+ hastane.Tesis_Kodu + "', HastaneAdı='" + hastane.Hastane_Adi +"', HastaneAdres='"+ hastane.Hastene_Adres +"', HastaneTelefon='"+ hastane.Hastane_Telefon +"',BaglıOlduguGrupId='"+ hastane.Bagli_Oldugu_Grup_Id +"' Where Id='{hastane.Id}'";
+                string sql = $"Update Hastane SET Tesis_Kodu='"+ hastane.Tesis_Kodu + "', Hastane_Adi='" + hastane.Hastane_Adi +"', Hastane_Adres='"+ hastane.Hastene_Adres +"', Hastane_Telefon='"+ hastane.Hastane_Telefon +"',Bagli_Oldugu_Grup_Id='"+ hastane.Bagli_Oldugu_Grup_Id +"' Where Id="+hastane.Id;
                 using (SqlCommand command = new SqlCommand(sql, connection))
                 {
                     connection.Open();
@@ -209,7 +292,7 @@ public ActionResult GrupSil(int id)
          string connectionString = this.Configuration.GetConnectionString("appDbConnection");
             using (SqlConnection connection = new SqlConnection(connectionString))
             {
-                string sql = $"Update Sigorta SET SigortaSirketKodu='"+ sgrt.Sigorta_Sirket_Kodu + "', SigortaAdı='"+sgrt.Sigorta_Adi+"', SigortaAdres='"+sgrt.Sigorta_Adres+"', SigortaTelefon='"+sgrt.Sigorta_Telefon+"' Where Id='{sgrt.Id}'";
+                string sql = $"Update Sigorta SET Sigorta_Sirket_Kodu='"+ sgrt.Sigorta_Sirket_Kodu + "', Sigorta_Adi='"+sgrt.Sigorta_Adi+"', Sigorta_Adres='"+sgrt.Sigorta_Adres+"', Sigorta_Telefon='"+sgrt.Sigorta_Telefon+"' Where Id="+sgrt.Id;
                 using (SqlCommand command = new SqlCommand(sql, connection))
                 {
                     connection.Open();
@@ -283,7 +366,7 @@ public ActionResult GrupSil(int id)
             string connectionString = this.Configuration.GetConnectionString("appDbConnection");
             using (SqlConnection connection = new SqlConnection(connectionString))
             {
-                string sql = $"Update Grup_Tanımı SET GrupKodu='"+ grp.Grup_Kodu + "', GrupAdı='"+grp.Grup_Adi+"' Where Id='{grp.Id}'";
+                string sql = $"Update Grup_Tanımı SET Grup_Kodu='"+ grp.Grup_Kodu + "', Grup_Adi='"+grp.Grup_Adi+"' Where Id="+grp.Id;
                 using (SqlCommand command = new SqlCommand(sql, connection))
                 {
                     connection.Open();
@@ -303,7 +386,7 @@ public ActionResult GrupSil(int id)
                 string connectionString = this.Configuration.GetConnectionString("appDbConnection");
                 using (SqlConnection connection = new SqlConnection(connectionString))
                 {
-                    string sql = "Insert Into Hastane (Tesis_Kodu, Hastane_Adi, Hastane_Telefon, Hastane_Adres,Bagli_Oldugu_Grup_Id) Values ('" + hastane.Tesis_Kodu + "','" + hastane.Hastane_Adi + "','" + hastane.Hastane_Telefon + "','" +  hastane.Hastene_Adres + "','" + hastane.Bagli_Oldugu_Grup_Id + "')"; 
+                    string sql = "Insert Into Hastane (Tesis_Kodu, Hastane_Adi, Hastane_Telefon, Hastane_Adres, Bagli_Oldugu_Grup_Id) Values ('" + hastane.Tesis_Kodu + "','" + hastane.Hastane_Adi + "','" + hastane.Hastane_Telefon + "','" +  hastane.Hastene_Adres + "','" + hastane.Bagli_Oldugu_Grup_Id + "')"; 
                    using (SqlCommand command = new SqlCommand(sql, connection))
                     {
                         command.CommandType = CommandType.Text;
@@ -313,11 +396,40 @@ public ActionResult GrupSil(int id)
                     }
                     return RedirectToAction("Hastane_Islemleri");
                 }
+                
+            }
+            else
+                return View();
+        }
+
+        [HttpPost]
+        public IActionResult FonksiyonEkle(Fonksiyonlar fnk)
+        {
+            if (ModelState.IsValid)
+            {
+                string connectionString = this.Configuration.GetConnectionString("appDbConnection");
+                using (SqlConnection connection = new SqlConnection(connectionString))
+                {
+                    string sql = "Insert Into Fonksiyonlar (Fonksiyon_Kodu, Fonksiyon_Adi) Values ('" + fnk.Fonksiyon_Kodu + "','" + fnk.Fonksiyon_Adi + "')"; 
+                   using (SqlCommand command = new SqlCommand(sql, connection))
+                    {
+                        command.CommandType = CommandType.Text;
+                        connection.Open();
+                        command.ExecuteNonQuery();
+                        connection.Close();
+                    }
+                    return RedirectToAction("Fonksiyon_Islemleri");
+                }
+                
             }
             else
                 return View();
         }
        
+        public IActionResult FonksiyonEkle()
+        { 
+            return View();
+        }
         public IActionResult HastaneEkle()
         { 
             return View();
@@ -386,23 +498,6 @@ public ActionResult GrupSil(int id)
         {
             return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
         }
-        public ActionResult HastaneSec() {
-             
-        
-            return View();
-    
-
-        }
-
-        public ActionResult SigortaSec() {
-
-        return View();
-
-        }
-        public ActionResult GrupSec() {
-
-        return View();
-
-        }
+       
     }
 }

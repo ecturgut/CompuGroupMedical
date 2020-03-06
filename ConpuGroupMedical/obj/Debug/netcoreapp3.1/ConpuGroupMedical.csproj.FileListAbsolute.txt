@@ -138,3 +138,8 @@ C:\Users\cemre\Desktop\BİLGİLER\Dersler\Visual Studio Code Projects\cgm\ConpuG
 C:\Users\cemre\Desktop\BİLGİLER\Dersler\Visual Studio Code Projects\cgm\ConpuGroupMedical\obj\Debug\netcoreapp3.1\Razor\Views\Home\GrupSil.cshtml.g.cs
 C:\Users\cemre\Desktop\BİLGİLER\Dersler\Visual Studio Code Projects\cgm\ConpuGroupMedical\obj\Debug\netcoreapp3.1\Razor\Views\Home\HastaneSil.cshtml.g.cs
 C:\Users\cemre\Desktop\BİLGİLER\Dersler\Visual Studio Code Projects\cgm\ConpuGroupMedical\obj\Debug\netcoreapp3.1\Razor\Views\Home\SigortaSil.cshtml.g.cs
+C:\Users\cemre\Desktop\BİLGİLER\Dersler\Visual Studio Code Projects\cgm\ConpuGroupMedical\obj\Debug\netcoreapp3.1\Razor\Views\Home\Fonksiyonlar.cshtml.g.cs
+C:\Users\cemre\Desktop\BİLGİLER\Dersler\Visual Studio Code Projects\cgm\ConpuGroupMedical\obj\Debug\netcoreapp3.1\Razor\Views\Home\Fonksiyon_Islemleri.cshtml.g.cs
+C:\Users\cemre\Desktop\BİLGİLER\Dersler\Visual Studio Code Projects\cgm\ConpuGroupMedical\obj\Debug\netcoreapp3.1\Razor\Views\Home\FonksiyonDuzenle.cshtml.g.cs
+C:\Users\cemre\Desktop\BİLGİLER\Dersler\Visual Studio Code Projects\cgm\ConpuGroupMedical\obj\Debug\netcoreapp3.1\Razor\Views\Home\FonksiyonSil.cshtml.g.cs
+C:\Users\cemre\Desktop\BİLGİLER\Dersler\Visual Studio Code Projects\cgm\ConpuGroupMedical\obj\Debug\netcoreapp3.1\Razor\Views\Home\FonksiyonEkle.cshtml.g.cs

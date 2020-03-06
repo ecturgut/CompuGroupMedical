@@ -20,29 +20,15 @@
 <body>
 
             <br>
-              <label for="HastaneAdı">Hastane Seçiniz</label><br>
-                <select class="form-control" id="HastaneAdı" name="HastaneAdı">
-                <option selected disabled>----------------- Lütfen Hastane Adı Seçiniz -----------------</option> 
-                <option>Yeni Hastane 1</option>
-                <option>Yeni Hastane 2</option>
-                <option>Yeni Hastane 3</option>
-                <option>Yeni Hastane 4</option> 
-                </select>
+            <td>Hastane Seçiniz  </td>
+            @Html.DropDownList("Hastanes", "Lütfen bir hastane seçiniz...")
        
             <br>
-
-
-
             <br>
-                <label for="SigortaAdı">Sigorta Seçiniz</label><br>
-                <select class="form-control" id="SigortaAdı" name="SigortaAdı">
-                <option selected disabled>----------------- Lütfen Sigorta Şirketi Seçiniz -----------------</option> 
-                <option>Yeni Sigorta 1</option>
-                <option>Yeni Sigorta 2</option>
-                <option>Yeni Sigorta 3</option>
-                <option>Yeni Sigorta 4</option> 
-                </select>
 
+            <td>Sigorta Seçiniz  </td>
+             @*@Html.DropDownList("Sigortas", "Lütfen bir sigorta şirketi seçiniz...")*@
+             
             <br>
 
 <br>

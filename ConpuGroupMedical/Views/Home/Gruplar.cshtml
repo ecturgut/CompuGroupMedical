@@ -18,17 +18,10 @@
 </head>
 
 <body>
-
-            <br>
-                 <label for="GrupAdı">Grup Seçiniz</label><br>
-                <select class="form-control" id="GrupAdı" name="GrupAdı">
-                <option selected disabled>----------------- Lütfen Grup Seçiniz -----------------</option> 
-                <option>Yeni Grup 1</option>
-                <option>Yeni Grup 2</option>
-                <option>Yeni Grup 3</option>
-                <option>Yeni Grup 4</option> 
-                </select>
-            <br>
+        <br>
+        <td>Grup Seçiniz  </td>
+         @Html.DropDownList("Groups", "Lütfen bir grup seçiniz...")
+         <br>
 
 <br>
 <br>

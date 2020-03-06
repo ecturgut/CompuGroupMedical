@@ -1,7 +1,6 @@
-@* @model List<ConpuGroupMedical.Models.Hastane> *@
-
+@* @model List<ConpuGroupMedical.Models.Fonksiyonlar>; *@
 @{
-    ViewData["Title"] = "Hastane_Islemleri";
+    ViewData["Title"] = "Fonksiyon_Islemleri";
 }
 <html>
     <head>
@@ -191,16 +190,15 @@ $(document).ready(function(){
             <div class="table-title">
                 <div class="row">
                     <div class="col-sm-5">
-						<h2>Hastane <b>Bilgileri</b></h2>
-					</div>
+						<h2>Fonksiyon <b> Bilgileri</b></h2>
+					</div>               
                     <div class="col-sm-3">
                         <div class="search-box">
                             <input type="text" class="form-control" placeholder="Kayıt Bul...">
                         </div>
                     </div>
 					<div class="col-sm-4">
-						<button type="button" id="btnHastEkle" class="btn btn-sm btn-primary btn-create badge-pill"asp-route-id="." onclick="location.href='@Url.Action("HastaneEkle")'">Yeni Hastane Ekle</button>	
-					
+						<button type="button" id="btnFnkEkle" class="btn btn-sm btn-primary btn-create badge-pill"asp-route-id="." onclick="location.href='@Url.Action("FonksiyonEkle")'">Yeni Fonksiyon Ekle</button>											
 					</div>
                 </div>
             </div>
@@ -208,51 +206,34 @@ $(document).ready(function(){
                 <thead>
                     <tr>
                         <th>ID</th>
-                        <th>Tesis Kodu</th>						
-						<th>Hastame Adı</th>
-						<th>Hastane Telefon</th>
-                        <th>Hastane Adres</th>
-						<th>Bağlı Olduğu Grup Kodu</th>
-						<th class="float-right">Yapılacak</th>
+                        <th>Fonksiyon Adı</th>		
+                        <th>Fonksiyon Kodu</th>
+	
                     </tr>
                 </thead>
                 <tbody>
                     <tr>
-						@foreach (var item in Model)
-				{	
-					<tr class="text">				
-						<td>@item.Id</td>
-						<td>@item.Tesis_Kodu</td>
-						<td>@item.Hastane_Adi</td>
-						<td>@item.Hastane_Telefon</td>
-						<td>@item.Hastane_Adres</td>
-						<td>@item.Bagli_Oldugu_Grup_Id</td>
-						
-
-						<td>
-							<button type="button" id="duzenle" class="btn btn-primary badge-pill"asp-route-id="@item.Id" onclick="location.href='@Url.Action("HastaneDuzenle",new {id=@item.Id})'">Düzenle</button>
-
-               
-                            
-                            <button type="button" id="sil" class="btn btn-sm btn-danger" asp-route-id="@item.Id" onclick="location.href='@Url.Action("HastaneSil",new {id=@item.Id})'"> Sil</button>
+                    
+                     @foreach (var item in Model)
+                        {
+                            <tr>
+                        <td>@item.Id</td>
+						<td>@item.Fonksiyon_Adi</td>
+						<td>@item.Fonksiyon_Kodu</td>
                         
+
+                        <td>
+                            <button type="button" id="sil" class="btn btn-primary badge-pill"asp-route-id="@item.Id" onclick="location.href='@Url.Action("FonksiyonDuzenle",new {id=@item.Id})'">Düzenle</button>
+
+                            <button type="button" id="sil" class="btn btn-sm btn-danger" asp-route-id="@item.Id" onclick="location.href='@Url.Action("FonksiyonSil",new {id=@item.Id})'"> Sil</button>
                         </td>
-						
-					</tr>	
-					}
-  					
-                    </tr>					
-					
+                         
+                     </tr>    
+                        }
+                    </tr>
                 </tbody>
             </table>
-
-			
-
         </div>
     </div>
-
-
-
-
   </body>
  </html>

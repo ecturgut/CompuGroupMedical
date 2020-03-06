@@ -20506,6 +20506,11 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "c:\\Users\\cemre\\Desktop\\BİLGİLER\\Dersler\\Visual Studio Code Projects\\cgm\\ConpuGroupMedical\\Views\\Home\\Fonksiyon_Islemleri.cshtml",
+      "TargetPath": "Views\\Home\\Fonksiyon_Islemleri.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "c:\\Users\\cemre\\Desktop\\BİLGİLER\\Dersler\\Visual Studio Code Projects\\cgm\\ConpuGroupMedical\\Views\\Home\\HastaneEkle.cshtml",
       "TargetPath": "Views\\Home\\HastaneEkle.cshtml",
       "FileKind": "mvc"
@@ -20521,13 +20526,28 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "c:\\Users\\cemre\\Desktop\\BİLGİLER\\Dersler\\Visual Studio Code Projects\\cgm\\ConpuGroupMedical\\Views\\Home\\FonksiyonDuzenle.cshtml",
+      "TargetPath": "Views\\Home\\FonksiyonDuzenle.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "c:\\Users\\cemre\\Desktop\\BİLGİLER\\Dersler\\Visual Studio Code Projects\\cgm\\ConpuGroupMedical\\Views\\Home\\GrupEkle.cshtml",
       "TargetPath": "Views\\Home\\GrupEkle.cshtml",
       "FileKind": "mvc"
     },
     {
+      "FilePath": "c:\\Users\\cemre\\Desktop\\BİLGİLER\\Dersler\\Visual Studio Code Projects\\cgm\\ConpuGroupMedical\\Views\\Home\\FonksiyonEkle.cshtml",
+      "TargetPath": "Views\\Home\\FonksiyonEkle.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "c:\\Users\\cemre\\Desktop\\BİLGİLER\\Dersler\\Visual Studio Code Projects\\cgm\\ConpuGroupMedical\\Views\\Home\\SigortaEkle.cshtml",
       "TargetPath": "Views\\Home\\SigortaEkle.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\cemre\\Desktop\\BİLGİLER\\Dersler\\Visual Studio Code Projects\\cgm\\ConpuGroupMedical\\Views\\Home\\FonksiyonSil.cshtml",
+      "TargetPath": "Views\\Home\\FonksiyonSil.cshtml",
       "FileKind": "mvc"
     },
     {
@@ -20583,6 +20603,11 @@
     {
       "FilePath": "c:\\Users\\cemre\\Desktop\\BİLGİLER\\Dersler\\Visual Studio Code Projects\\cgm\\ConpuGroupMedical\\Views\\Home\\HastaneDuzenle.cshtml",
       "TargetPath": "Views\\Home\\HastaneDuzenle.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\cemre\\Desktop\\BİLGİLER\\Dersler\\Visual Studio Code Projects\\cgm\\ConpuGroupMedical\\Views\\Home\\Fonksiyonlar.cshtml",
+      "TargetPath": "Views\\Home\\Fonksiyonlar.cshtml",
       "FileKind": "mvc"
     },
     {

@@ -1,0 +1,53 @@
+@model ConpuGroupMedical.Models.Fonksiyonlar;
+<!DOCTYPE html>
+@{
+    ViewData["Title"] = "FonksiyonDuzenle";
+}
+<html>
+    <head>
+
+    </head>
+    <body>
+        <h1>Grup Düzenleme Sayfası</h1>
+        <br>
+ @using (Html.BeginForm("FonksiyonDuzenle","Home", FormMethod.Post))
+            {
+                <br>
+                <br>
+            <tr>
+                <td>Fonksiyon Adı </td>
+                <td>
+                    @Html.TextBoxFor(m => m.Fonksiyon_Adi)
+                </td>
+            </tr>
+
+            <br>
+            <br>
+
+            <tr>
+                <td>Fonksiyon Kodu </td>
+                <td>
+                    @Html.TextBoxFor(m => m.Fonksiyon_Kodu)
+                </td>
+            </tr>  
+
+
+
+            <br>
+            <br>
+
+             <button type="submit" id="save" class="btn btn-primary"  >Fonksiyon Düzenlemeyi Tamamla</button>
+  
+
+            <br>
+
+            }
+        <div> 
+            <a asp-action="Fonksiyon_Islemleri">Fonksiyon Listesine Geri Dön</a> 
+        </div> 
+
+            <br>
+        
+
+    </body>
+</html>

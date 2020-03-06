@@ -11,6 +11,7 @@ public class Fonksiyonlar
 [Key]
 public int Id { get; set; }
 public string Fonksiyon_Adi { get; set; }
+public int Fonksiyon_Kodu { get; set; }
 
 }
 

@@ -1,5 +1,5 @@
 @{
-    ViewData["Title"] = "Sigortalar";
+    ViewData["Title"] = "Fonksiyonlar";
 }
 <br>
 <h1>@ViewData["Title"]</h1>
@@ -18,23 +18,14 @@
 </head>
 
 <body>
-
-            <br>
-            <td> Sigorta Seçiniz  </td>
-            @Html.DropDownList("Sigortas", "Lütfen bir Sigorta Şirketi seçiniz...")
-             <br>
+       <h5>Fonksiyon Sayfası</h5>
 
 <br>
 
-<br>
-<fieldset>Fonksiyon Giriniz
-<input class="form-control" 
-        id="myTextBox" 
-        name="myTextBox" 
-        type="text" 
-        value="" />
-</fieldset>  
-<br>
+        <td>Fonksiyon Seçiniz  </td>
+         @Html.DropDownList("Fonksiyons", "Lütfen fonksiyon seçiniz...")
+         <br>
+
 <br>
 <p><input type="submit" value="Girilen Bilgileri Kaydet" id="kaydet"/> </p>
 
