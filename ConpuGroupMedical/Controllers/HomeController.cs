@@ -68,12 +68,12 @@ namespace ConpuGroupMedical.Controllers
             var result = _dbConnection.Query("select * from Sigorta", null, commandType: CommandType.Text); 
             return View(result);
         }
-        public IActionResult SigortaFonksiyonları()
+        public IActionResult Sigorta_Fonksiyonlari()
         {
-            var result = _dbConnection.Query("select * from SigortaFonksiyonları", null, commandType: CommandType.Text); 
-            ViewBag.SigortaFonk = new SelectList(result.ToList(),"Id","Sigorta_Adi","Fonksiyon_Adi");
-   
-            return View();
+            var result = _dbConnection.Query("select s.Id, f.Fonksiyon_Adi ,si.Sigorta_Adi from SigortaFonksiyonlari s inner join fonksiyonlar f on s.Fonksiyon_Id = f.Id inner join Sigorta si on si.Id=s.Sigorta_Id;", null, commandType: CommandType.Text); 
+
+            ViewBag.SigortaFonk = new SelectList(result.ToList(),"Id","Sigorta_Id","Fonksiyon_Adi");  
+            return View(result);
         }
         public IActionResult Hastaneler()
         {
@@ -432,7 +432,35 @@ public ActionResult GrupSil(int id)
             else
                 return View();
         }
-       
+
+        [HttpPost]
+        public IActionResult Sigorta_Fonksiyonlari_Ekle(Sigorta_Fonksiyonlari sgfnk,Sigorta sig,Fonksiyonlar fon)
+        {
+            if (ModelState.IsValid)
+            {
+                string connectionString = this.Configuration.GetConnectionString("appDbConnection");
+                using (SqlConnection connection = new SqlConnection(connectionString))
+                {
+                 string sql = "Insert Into SigortaFonksiyonlari (Fonksiyon_Id,Sigorta_Id) Values ('" + fon.Fonksiyon_Adi + "','" + sig.Sigorta_Adi + "')";
+                   using (SqlCommand command = new SqlCommand(sql, connection))
+                    {
+                        command.CommandType = CommandType.Text;
+                        connection.Open();
+                        command.ExecuteNonQuery();
+                        connection.Close();
+                    }
+                    return RedirectToAction("Sigorta_Fonksiyonlari");
+                }
+                
+            }
+            else
+
+            return View();
+        }
+       public IActionResult Sigorta_Fonksiyonlari_Ekle()
+        { 
+            return View();
+        }
         public IActionResult FonksiyonEkle()
         { 
             return View();

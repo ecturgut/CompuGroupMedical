@@ -1,0 +1,48 @@
+@model ConpuGroupMedical.Models.Sigorta_Fonksiyonlari;
+<!DOCTYPE html>
+@{
+    ViewData["Title"] = "Sigorta_Fonksiyonlari_Ekle";
+}
+<html>
+    <head>
+
+    </head>
+    <body>
+        <h1>Sigorta Fonksiyonları Ekleme Sayfası</h1>
+        <br>
+         @using (Html.BeginForm("Sigorta_Fonksiyonlari_Ekle","Home", FormMethod.Post))
+            {
+                <br>
+                <br>
+            <tr>
+                <td>Fonksiyon Adı</td>
+                <td>
+                    @Html.TextBoxFor(m => m.Fonksiyonlar.Fonksiyon_Adi)
+                </td>
+            </tr>  
+
+            <br>
+            <br>
+
+            <tr>
+                <td>Sigorta Adı </td>
+                <td>
+                    @Html.TextBoxFor(m => m.Sigorta.Sigorta_Adi)
+                </td>
+            </tr>
+
+            <br>
+            <br>
+            
+        <button type="submit" id="save" class="btn btn-primary">Yeni Sigorta Fonksiyon Bilgilerini Kaydet</button>
+        <br>
+
+            }
+        
+
+        <div> 
+            <a asp-action="Sigorta_Fonksiyon_Islemleri"> Sigorta Fonksiyon Listesine Geri Dön</a> 
+        </div> 
+
+    </body>
+</html>

@@ -219,8 +219,7 @@ $(document).ready(function(){
                             <tr>
                         <td>@item.Id</td>
 						<td>@item.Fonksiyon_Adi</td>
-						<td>@item.Fonksiyon_Kodu</td>
-                        
+						<td>@item.Fonksiyon_Kodu</td>                        
 
                         <td>
                             <button type="button" id="sil" class="btn btn-primary badge-pill"asp-route-id="@item.Id" onclick="location.href='@Url.Action("FonksiyonDuzenle",new {id=@item.Id})'">Düzenle</button>
@@ -230,6 +229,7 @@ $(document).ready(function(){
                          
                      </tr>    
                         }
+                            
                     </tr>
                 </tbody>
             </table>
