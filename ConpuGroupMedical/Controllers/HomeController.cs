@@ -434,14 +434,14 @@ public ActionResult GrupSil(int id)
         }
 
         [HttpPost]
-        public IActionResult Sigorta_Fonksiyonlari_Ekle(Sigorta_Fonksiyonlari sgfnk,Sigorta sig,Fonksiyonlar fon)
+        public IActionResult Sigorta_Fonksiyonlari_Ekle(Sigorta_Fonksiyonlari sgfnk)
         {
             if (ModelState.IsValid)
             {
                 string connectionString = this.Configuration.GetConnectionString("appDbConnection");
                 using (SqlConnection connection = new SqlConnection(connectionString))
                 {
-                 string sql = "Insert Into SigortaFonksiyonlari (Fonksiyon_Id,Sigorta_Id) Values ('" + fon.Fonksiyon_Adi + "','" + sig.Sigorta_Adi + "')";
+                 string sql = "Insert Into SigortaFonksiyonlari (Fonksiyon_Id,Sigorta_Id) Values ('" + sgfnk.Fonksiyon_Id + "','" + sgfnk.Sigorta_Id + "')";
                    using (SqlCommand command = new SqlCommand(sql, connection))
                     {
                         command.CommandType = CommandType.Text;
@@ -459,6 +459,12 @@ public ActionResult GrupSil(int id)
         }
        public IActionResult Sigorta_Fonksiyonlari_Ekle()
         { 
+            var result = _dbConnection.Query("select * from Sigorta", null, commandType: CommandType.Text); 
+            ViewBag.Fonksiyons = new SelectList(result.ToList(), "Id","Fonksiyon_Adi");
+            
+            var result2 = _dbConnection.Query("select * from Fonksiyonlar", null, commandType: CommandType.Text);
+            ViewBag.Sigortas = new SelectList(result2.ToList(), "Id","Sigorta_Adi");
+
             return View();
         }
         public IActionResult FonksiyonEkle()
