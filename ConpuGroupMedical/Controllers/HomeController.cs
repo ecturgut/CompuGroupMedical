@@ -209,7 +209,7 @@ public ActionResult GrupSil(int id)
             Sigorta_Fonksiyonlari sg = new Sigorta_Fonksiyonlari();
             using (SqlConnection connection = new SqlConnection(connectionString))
             {
-                string sql = $"Delete From Sigorta_Fonksiyonlari Where Id='"+ id +"'";
+                string sql = $"Delete From SigortaFonksiyonlari Where Id='"+ id +"'";
                 SqlCommand command = new SqlCommand(sql, connection);
 
                 connection.Open();
