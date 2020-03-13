@@ -20536,16 +20536,6 @@
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\Users\\cemre\\Desktop\\BİLGİLER\\Dersler\\Visual Studio Code Projects\\cgm\\ConpuGroupMedical\\Views\\Home\\Hastaneler.cshtml",
-      "TargetPath": "Views\\Home\\Hastaneler.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\cemre\\Desktop\\BİLGİLER\\Dersler\\Visual Studio Code Projects\\cgm\\ConpuGroupMedical\\Views\\Home\\Sigortalar.cshtml",
-      "TargetPath": "Views\\Home\\Sigortalar.cshtml",
-      "FileKind": "mvc"
-    },
-    {
       "FilePath": "c:\\Users\\cemre\\Desktop\\BİLGİLER\\Dersler\\Visual Studio Code Projects\\cgm\\ConpuGroupMedical\\Views\\Home\\FonksiyonDuzenle.cshtml",
       "TargetPath": "Views\\Home\\FonksiyonDuzenle.cshtml",
       "FileKind": "mvc"
@@ -20621,11 +20611,6 @@
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\Users\\cemre\\Desktop\\BİLGİLER\\Dersler\\Visual Studio Code Projects\\cgm\\ConpuGroupMedical\\Views\\Home\\Gruplar.cshtml",
-      "TargetPath": "Views\\Home\\Gruplar.cshtml",
-      "FileKind": "mvc"
-    },
-    {
       "FilePath": "c:\\Users\\cemre\\Desktop\\BİLGİLER\\Dersler\\Visual Studio Code Projects\\cgm\\ConpuGroupMedical\\Views\\Home\\Grup_Islemleri.cshtml",
       "TargetPath": "Views\\Home\\Grup_Islemleri.cshtml",
       "FileKind": "mvc"
@@ -20638,11 +20623,6 @@
     {
       "FilePath": "c:\\Users\\cemre\\Desktop\\BİLGİLER\\Dersler\\Visual Studio Code Projects\\cgm\\ConpuGroupMedical\\Views\\Home\\Sigorta_Fonksiyonlari.cshtml",
       "TargetPath": "Views\\Home\\Sigorta_Fonksiyonlari.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\cemre\\Desktop\\BİLGİLER\\Dersler\\Visual Studio Code Projects\\cgm\\ConpuGroupMedical\\Views\\Home\\Fonksiyonlar.cshtml",
-      "TargetPath": "Views\\Home\\Fonksiyonlar.cshtml",
       "FileKind": "mvc"
     },
     {

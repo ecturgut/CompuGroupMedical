@@ -123,9 +123,6 @@ C:\Users\cemre\Desktop\BİLGİLER\Dersler\Visual Studio Code Projects\cgm\ConpuG
 C:\Users\cemre\Desktop\BİLGİLER\Dersler\Visual Studio Code Projects\cgm\ConpuGroupMedical\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
 C:\Users\cemre\Desktop\BİLGİLER\Dersler\Visual Studio Code Projects\cgm\ConpuGroupMedical\obj\Debug\netcoreapp3.1\ConpuGroupMedical.Views.pdb
 C:\Users\cemre\Desktop\BİLGİLER\Dersler\Visual Studio Code Projects\cgm\ConpuGroupMedical\obj\Debug\netcoreapp3.1\ConpuGroupMedical.csproj.CopyComplete
-C:\Users\cemre\Desktop\BİLGİLER\Dersler\Visual Studio Code Projects\cgm\ConpuGroupMedical\obj\Debug\netcoreapp3.1\Razor\Views\Home\Hastaneler.cshtml.g.cs
-C:\Users\cemre\Desktop\BİLGİLER\Dersler\Visual Studio Code Projects\cgm\ConpuGroupMedical\obj\Debug\netcoreapp3.1\Razor\Views\Home\Gruplar.cshtml.g.cs
-C:\Users\cemre\Desktop\BİLGİLER\Dersler\Visual Studio Code Projects\cgm\ConpuGroupMedical\obj\Debug\netcoreapp3.1\Razor\Views\Home\Sigortalar.cshtml.g.cs
 C:\Users\cemre\Desktop\BİLGİLER\Dersler\Visual Studio Code Projects\cgm\ConpuGroupMedical\obj\Debug\netcoreapp3.1\Razor\Views\Home\Hastane_Islemleri.cshtml.g.cs
 C:\Users\cemre\Desktop\BİLGİLER\Dersler\Visual Studio Code Projects\cgm\ConpuGroupMedical\obj\Debug\netcoreapp3.1\Razor\Views\Home\Grup_Islemleri.cshtml.g.cs
 C:\Users\cemre\Desktop\BİLGİLER\Dersler\Visual Studio Code Projects\cgm\ConpuGroupMedical\obj\Debug\netcoreapp3.1\Razor\Views\Home\Sigorta_Islemleri.cshtml.g.cs
@@ -138,7 +135,6 @@ C:\Users\cemre\Desktop\BİLGİLER\Dersler\Visual Studio Code Projects\cgm\ConpuG
 C:\Users\cemre\Desktop\BİLGİLER\Dersler\Visual Studio Code Projects\cgm\ConpuGroupMedical\obj\Debug\netcoreapp3.1\Razor\Views\Home\GrupSil.cshtml.g.cs
 C:\Users\cemre\Desktop\BİLGİLER\Dersler\Visual Studio Code Projects\cgm\ConpuGroupMedical\obj\Debug\netcoreapp3.1\Razor\Views\Home\HastaneSil.cshtml.g.cs
 C:\Users\cemre\Desktop\BİLGİLER\Dersler\Visual Studio Code Projects\cgm\ConpuGroupMedical\obj\Debug\netcoreapp3.1\Razor\Views\Home\SigortaSil.cshtml.g.cs
-C:\Users\cemre\Desktop\BİLGİLER\Dersler\Visual Studio Code Projects\cgm\ConpuGroupMedical\obj\Debug\netcoreapp3.1\Razor\Views\Home\Fonksiyonlar.cshtml.g.cs
 C:\Users\cemre\Desktop\BİLGİLER\Dersler\Visual Studio Code Projects\cgm\ConpuGroupMedical\obj\Debug\netcoreapp3.1\Razor\Views\Home\Fonksiyon_Islemleri.cshtml.g.cs
 C:\Users\cemre\Desktop\BİLGİLER\Dersler\Visual Studio Code Projects\cgm\ConpuGroupMedical\obj\Debug\netcoreapp3.1\Razor\Views\Home\FonksiyonDuzenle.cshtml.g.cs
 C:\Users\cemre\Desktop\BİLGİLER\Dersler\Visual Studio Code Projects\cgm\ConpuGroupMedical\obj\Debug\netcoreapp3.1\Razor\Views\Home\FonksiyonSil.cshtml.g.cs

@@ -33,20 +33,6 @@ namespace ConpuGroupMedical.Controllers
         {
             return View();
         }
-        public IActionResult Fonksiyonlar()
-        {
-            var result = _dbConnection.Query("select * from Fonksiyonlar", null, commandType: CommandType.Text); 
-            ViewBag.Fonksiyons = new SelectList(result.ToList(), "Id","Fonksiyon_Adi");
-            return View();
-        }
-        public IActionResult Gruplar()
-        { 
-            var result = _dbConnection.Query("select * from Grup_Tanımı", null, commandType: CommandType.Text); 
-
-            ViewBag.Groups = new SelectList(result.ToList(), "Grup_Kodu", "Grup_Adi");
-            return View();
-
-        }
         public IActionResult Fonksiyon_Islemleri()
         {
             var result = _dbConnection.Query("select * from Fonksiyonlar", null, commandType: CommandType.Text); 
@@ -56,12 +42,6 @@ namespace ConpuGroupMedical.Controllers
         {
             var result = _dbConnection.Query("select * from Grup_Tanımı", null, commandType: CommandType.Text); 
             return View(result);
-        }
-        public IActionResult Sigortalar()
-        {
-            var result = _dbConnection.Query("select * from Sigorta", null, commandType: CommandType.Text); 
-            ViewBag.Sigortas = new SelectList(result.ToList(), "Id","Sigorta_Adi");
-            return View();
         }
          public IActionResult Sigorta_Islemleri()
         {
@@ -74,14 +54,6 @@ namespace ConpuGroupMedical.Controllers
 
             ViewBag.SigortaFonk = new SelectList(result.ToList(),"Id","Sigorta_Id","Fonksiyon_Adi");  
             return View(result);
-        }
-        public IActionResult Hastaneler()
-        {
-            var result = _dbConnection.Query("select * from hastane", null, commandType: CommandType.Text); 
-            ViewBag.Hastanes = new SelectList(result.ToList(), "Id","Hastane_Adi");
-   
-            return View();
-
         }
 
         public IActionResult Hastane_Islemleri()
@@ -590,7 +562,7 @@ public ActionResult GrupSil(int id)
         {
         var result2 = _dbConnection.Query("select * from Fonksiyonlar", null, commandType: CommandType.Text);
         ViewBag.Fonk = new SelectList(result2.ToList(), "Id","Fonksiyon_Adi");
-        
+
         var result = _dbConnection.Query("select * from Sigorta", null, commandType: CommandType.Text); 
         ViewBag.Sigortas = new SelectList(result.ToList(), "Id","Sigorta_Adi");
             return View();
