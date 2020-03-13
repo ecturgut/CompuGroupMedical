@@ -179,7 +179,7 @@ public ActionResult GrupSil(int id)
  {
  string connectionString = this.Configuration.GetConnectionString("appDbConnection");
 
-            Grup_Tanimi grup = new Grup_Tanimi();
+            Fonksiyonlar fnk = new Fonksiyonlar();
             using (SqlConnection connection = new SqlConnection(connectionString))
             {
                 string sql = $"Delete From Fonksiyonlar Where Id='"+ id +"'";
@@ -191,15 +191,42 @@ public ActionResult GrupSil(int id)
                 {
                     while (dataReader.Read())
                     {
-                    grup.Id = Convert.ToInt32(dataReader["Id"]);
-                    grup.Grup_Adi = Convert.ToString(dataReader["Fonksiyon_Adi"]);
-                    grup.Grup_Kodu = Convert.ToInt32(dataReader["Fonksiyon_Kodu"]);
+                    fnk.Id = Convert.ToInt32(dataReader["Id"]);
+                    fnk.Fonksiyon_Adi = Convert.ToString(dataReader["Fonksiyon_Adi"]);
+                    fnk.Fonksiyon_Kodu = Convert.ToInt32(dataReader["Fonksiyon_Kodu"]);
                     }
                 }
 
                 connection.Close();
             }
-            return View(grup);
+            return View(fnk);
+ }
+
+ public ActionResult Sigorta_Fonksiyonlari_Sil(int id)
+ {
+ string connectionString = this.Configuration.GetConnectionString("appDbConnection");
+
+            Sigorta_Fonksiyonlari sg = new Sigorta_Fonksiyonlari();
+            using (SqlConnection connection = new SqlConnection(connectionString))
+            {
+                string sql = $"Delete From Sigorta_Fonksiyonlari Where Id='"+ id +"'";
+                SqlCommand command = new SqlCommand(sql, connection);
+
+                connection.Open();
+
+                using (SqlDataReader dataReader = command.ExecuteReader())
+                {
+                    while (dataReader.Read())
+                    {
+                    sg.Id = Convert.ToInt32(dataReader["Id"]);
+                    sg.Sigorta_Id = Convert.ToInt32(dataReader["Sigorta_Id"]);
+                    sg.Fonksiyon_Id = Convert.ToInt32(dataReader["Fonksiyon_Id"]);
+                    }
+                }
+
+                connection.Close();
+            }
+            return View(sg);
  }
       
         public IActionResult FonksiyonDuzenle(int id)
@@ -246,6 +273,52 @@ public ActionResult GrupSil(int id)
 
             return RedirectToAction("Fonksiyon_Islemleri");
         }
+
+         public IActionResult Sigorta_Fonksiyonlari_Duzenle(int id)
+        {
+          string connectionString = this.Configuration.GetConnectionString("appDbConnection");
+
+            Sigorta_Fonksiyonlari sgrtfnk = new Sigorta_Fonksiyonlari();
+            using (SqlConnection connection = new SqlConnection(connectionString))
+            {
+                string sql = $"Select * From SigortaFonksiyonlari Where Id='{id}'";
+                SqlCommand command = new SqlCommand(sql, connection);
+
+                connection.Open();
+
+                using (SqlDataReader dataReader = command.ExecuteReader())
+                {
+                    while (dataReader.Read())
+                    {   
+                    sgrtfnk.Id = Convert.ToInt32(dataReader["Id"]);
+                    sgrtfnk.Fonksiyon_Id  = Convert.ToInt32(dataReader["Fonksiyon_Id"]);
+                    sgrtfnk.Sigorta_Id = Convert.ToInt32(dataReader["Sigorta_Id"]);
+                    }
+                }
+
+                connection.Close();
+            }
+            return View(sgrtfnk);
+        }
+
+ [HttpPost]
+        public IActionResult Sigorta_Fonksiyonlari_Duzenle(Sigorta_Fonksiyonlari sgrtfnk)
+        {
+             string connectionString = this.Configuration.GetConnectionString("appDbConnection");
+            using (SqlConnection connection = new SqlConnection(connectionString))
+            {
+                string sql = $"Update SigortaFonksiyonlari SET Fonksiyon_Id='"+ sgrtfnk.Fonksiyon_Id + "', Sigorta_Id='" + sgrtfnk.Sigorta_Id +"' Where Id="+sgrtfnk.Id;
+                using (SqlCommand command = new SqlCommand(sql, connection))
+                {
+                    connection.Open();
+                    command.ExecuteNonQuery();
+                    connection.Close();
+                }
+            }
+
+            return RedirectToAction("Sigorta_Fonksiyonlari");
+        }
+
         public IActionResult HastaneDuzenle(int id)
         {
           string connectionString = this.Configuration.GetConnectionString("appDbConnection");
@@ -384,6 +457,53 @@ public ActionResult GrupSil(int id)
 
             return RedirectToAction("Grup_Islemleri");
         }
+        [HttpPost]
+        public IActionResult GrupEkle(Grup_Tanimi grup)
+        {
+          if (ModelState.IsValid)
+            {
+                string connectionString = this.Configuration.GetConnectionString("appDbConnection");
+                using (SqlConnection connection = new SqlConnection(connectionString))
+                {
+                    string sql = "Insert Into Grup_Tanımı (Grup_Kodu, Grup_Adi) Values ('" + grup.Grup_Kodu + "','" + grup.Grup_Adi + "')"; 
+                   using (SqlCommand command = new SqlCommand(sql, connection))
+                    {
+                        command.CommandType = CommandType.Text;
+                        connection.Open();
+                        command.ExecuteNonQuery();
+                        connection.Close();
+                    }
+                    return RedirectToAction("Grup_Islemleri");
+                }
+            }
+            else
+                return View();  
+          
+        }
+
+        [HttpPost]
+        public IActionResult SigortaEkle(Sigorta sigorta)
+        {
+            if (ModelState.IsValid)
+            {
+                string connectionString = this.Configuration.GetConnectionString("appDbConnection");
+                using (SqlConnection connection = new SqlConnection(connectionString))
+                {
+                    string sql = "Insert Into Sigorta (Sigorta_Sirket_Kodu, Sigorta_Adi, Sigorta_Telefon, Sigorta_Adres) Values ('" + sigorta.Sigorta_Sirket_Kodu + "','" + sigorta.Sigorta_Adi + "','" + sigorta.Sigorta_Telefon + "','" +  sigorta.Sigorta_Adres + "')";
+                    
+                   using (SqlCommand command = new SqlCommand(sql, connection))
+                    {
+                        command.CommandType = CommandType.Text;
+                        connection.Open();
+                        command.ExecuteNonQuery();
+                        connection.Close();
+                    }
+                    return RedirectToAction("Sigorta_Islemleri");
+                }
+            }
+            else
+                return View();
+        }
 
        [HttpPost]
         public IActionResult HastaneEkle(Hastane hastane)
@@ -459,13 +579,13 @@ public ActionResult GrupSil(int id)
         }
        public IActionResult Sigorta_Fonksiyonlari_Ekle()
         { 
-            var result = _dbConnection.Query("select * from Sigorta", null, commandType: CommandType.Text); 
-            ViewBag.Fonksiyons = new SelectList(result.ToList(), "Id","Fonksiyon_Adi");
+          var result = _dbConnection.Query("select * from Sigorta", null, commandType: CommandType.Text); 
+          ViewBag.Sigortas = new SelectList(result.ToList(), "Id","Sigorta_Adi");
             
-            var result2 = _dbConnection.Query("select * from Fonksiyonlar", null, commandType: CommandType.Text);
-            ViewBag.Sigortas = new SelectList(result2.ToList(), "Id","Sigorta_Adi");
-
-            return View();
+         var result2 = _dbConnection.Query("select * from Fonksiyonlar", null, commandType: CommandType.Text);
+            ViewBag.Fonk = new SelectList(result2.ToList(), "Id","Fonksiyon_Adi");
+            
+        return View();
         }
         public IActionResult FonksiyonEkle()
         { 
@@ -475,64 +595,14 @@ public ActionResult GrupSil(int id)
         { 
             return View();
         }
-
         public IActionResult GrupEkle()
         { 
             return View();
         }
-
-        [HttpPost]
-        public IActionResult GrupEkle(Grup_Tanimi grup)
-        {
-          if (ModelState.IsValid)
-            {
-                string connectionString = this.Configuration.GetConnectionString("appDbConnection");
-                using (SqlConnection connection = new SqlConnection(connectionString))
-                {
-                    string sql = "Insert Into Grup_Tanımı (Grup_Kodu, Grup_Adi) Values ('" + grup.Grup_Kodu + "','" + grup.Grup_Adi + "')"; 
-                   using (SqlCommand command = new SqlCommand(sql, connection))
-                    {
-                        command.CommandType = CommandType.Text;
-                        connection.Open();
-                        command.ExecuteNonQuery();
-                        connection.Close();
-                    }
-                    return RedirectToAction("Grup_Islemleri");
-                }
-            }
-            else
-                return View();  
-          
-        }
-
-
-        [HttpPost]
-        public IActionResult SigortaEkle(Sigorta sigorta)
-        {
-            if (ModelState.IsValid)
-            {
-                string connectionString = this.Configuration.GetConnectionString("appDbConnection");
-                using (SqlConnection connection = new SqlConnection(connectionString))
-                {
-                    string sql = "Insert Into Sigorta (Sigorta_Sirket_Kodu, Sigorta_Adi, Sigorta_Telefon, Sigorta_Adres) Values ('" + sigorta.Sigorta_Sirket_Kodu + "','" + sigorta.Sigorta_Adi + "','" + sigorta.Sigorta_Telefon + "','" +  sigorta.Sigorta_Adres + "')";
-                    
-                   using (SqlCommand command = new SqlCommand(sql, connection))
-                    {
-                        command.CommandType = CommandType.Text;
-                        connection.Open();
-                        command.ExecuteNonQuery();
-                        connection.Close();
-                    }
-                    return RedirectToAction("Sigorta_Islemleri");
-                }
-            }
-            else
-                return View();
-        }
         public IActionResult SigortaEkle()
         {
             return View();
-        }
+        }      
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()

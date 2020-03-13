@@ -9,14 +9,15 @@
     </head>
     <body>
         <h1>Sigorta Fonksiyonları Ekleme Sayfası</h1>
-
+ @using (Html.BeginForm("Sigorta_Fonksiyonlari_Ekle","Home", FormMethod.Post))
+            {
             <br>
             <br>
 
             <tr>
-                <td>Fonksiyon Adı</td>
+                <td>Sigorta Seçiniz  </td>
                 <td>
-                @Html.DropDownList("Fonksiyons", "Lütfen fonksiyon seçiniz...")
+                @Html.DropDownList("Sigortas", "Lütfen seçiniz")
                 </td>
             </tr>  
 
@@ -24,9 +25,9 @@
             <br>
 
             <tr>
-                <td>Sigorta Adı </td>
+                <td>Fonksiyon Seçiniz  </td>
                 <td>
-                @Html.DropDownList("Sigortas", "Lütfen sigorta şirketi seçiniz...")
+                @Html.DropDownList("Fonk", "Lütfen seçiniz")
                 </td>
             </tr>
 
@@ -35,7 +36,7 @@
             
         <button type="submit" id="save" class="btn btn-primary">Yeni Sigorta Fonksiyon Bilgilerini Kaydet</button>
         <br>
-
+            }
         <div> 
             <a asp-action="Sigorta_Fonksiyon_Islemleri"> Sigorta Fonksiyon Listesine Geri Dön</a> 
         </div> 

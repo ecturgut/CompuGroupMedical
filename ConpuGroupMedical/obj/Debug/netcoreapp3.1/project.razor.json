@@ -20571,6 +20571,11 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "c:\\Users\\cemre\\Desktop\\BİLGİLER\\Dersler\\Visual Studio Code Projects\\cgm\\ConpuGroupMedical\\Views\\Home\\Sigorta_Fonksiyonlari_Duzenle.cshtml",
+      "TargetPath": "Views\\Home\\Sigorta_Fonksiyonlari_Duzenle.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "c:\\Users\\cemre\\Desktop\\BİLGİLER\\Dersler\\Visual Studio Code Projects\\cgm\\ConpuGroupMedical\\Views\\Home\\HastaneSil.cshtml",
       "TargetPath": "Views\\Home\\HastaneSil.cshtml",
       "FileKind": "mvc"
@@ -20588,6 +20593,11 @@
     {
       "FilePath": "c:\\Users\\cemre\\Desktop\\BİLGİLER\\Dersler\\Visual Studio Code Projects\\cgm\\ConpuGroupMedical\\Views\\Shared\\Error.cshtml",
       "TargetPath": "Views\\Shared\\Error.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\cemre\\Desktop\\BİLGİLER\\Dersler\\Visual Studio Code Projects\\cgm\\ConpuGroupMedical\\Views\\Home\\Sigorta_Fonksiyonlari_Sil.cshtml",
+      "TargetPath": "Views\\Home\\Sigorta_Fonksiyonlari_Sil.cshtml",
       "FileKind": "mvc"
     },
     {
