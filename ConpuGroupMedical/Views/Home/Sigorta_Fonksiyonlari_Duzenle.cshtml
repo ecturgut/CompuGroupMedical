@@ -15,22 +15,21 @@
                 <br>
                 <br>
             <tr>
-                 <td>Sigorta Adı </td>
+                <td>Fonksiyon Adı</td>
                 <td>
-                @Html.TextBoxFor(m => m.Sigorta.Sigorta_Adi)
+                @Html.DropDownList("Fonk", "Seçiniz")
                 </td>
-            </tr>
+            </tr>  
 
             <br>
             <br>
 
             <tr>
-                <td>Fonksiyon Adı</td>
+                 <td>Sigorta Adı </td>
                 <td>
-                 @Html.TextBoxFor(m => m.Fonksiyonlar.Fonksiyon_Adi)
+                @Html.DropDownList("Sigortas", "Seçiniz")
                 </td>
-            </tr>  
-
+            </tr>
 
 
             <br>
@@ -40,10 +39,10 @@
   
 
             <br>
-
+            <br>
             }
         <div> 
-            <a asp-action="Sigorta_Fonksiyon_Islemleri"> Sigorta Fonksiyon Listesine Geri Dön</a> a> 
+            <a asp-action="Sigorta_Fonksiyon_Islemleri"> Sigorta Fonksiyon Listesine Geri Dön</a>
         </div> 
 
             <br>

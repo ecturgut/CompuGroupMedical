@@ -295,8 +295,13 @@ public ActionResult GrupSil(int id)
                     sgrtfnk.Sigorta_Id = Convert.ToInt32(dataReader["Sigorta_Id"]);
                     }
                 }
+                connection.Close();     
 
-                connection.Close();
+            var s = _dbConnection.Query("select * from Sigorta", null, commandType: CommandType.Text); 
+            ViewBag.Sigortas = new SelectList(s.ToList(), "Id", "Sigorta_Adi",sgrtfnk.Sigorta_Id);
+             
+             var f = _dbConnection.Query("select * from Fonksiyonlar", null, commandType: CommandType.Text); 
+              ViewBag.Fonk = new SelectList(f.ToList(), "Id", "Fonksiyon_Adi",sgrtfnk.Fonksiyon_Id);
             }
             return View(sgrtfnk);
         }
@@ -321,9 +326,11 @@ public ActionResult GrupSil(int id)
 
         public IActionResult HastaneDuzenle(int id)
         {
+        
           string connectionString = this.Configuration.GetConnectionString("appDbConnection");
 
             Hastane hastane = new Hastane();
+            
             using (SqlConnection connection = new SqlConnection(connectionString))
             {
                 string sql = $"Select * From Hastane Where Id='{id}'";
@@ -343,8 +350,11 @@ public ActionResult GrupSil(int id)
                     hastane.Bagli_Oldugu_Grup_Id = Convert.ToInt32(dataReader["Bagli_Oldugu_Grup_Id"]);
                     }
                 }
-
                 connection.Close();
+                var r = _dbConnection.Query("select * from Grup_Tanımı", null, commandType: CommandType.Text); 
+            
+                ViewBag.Bagli_Oldugu_Grup_Id = new SelectList(r.ToList(), "Grup_Kodu", "Grup_Adi", hastane.Bagli_Oldugu_Grup_Id);
+
             }
             return View(hastane);
         }
@@ -363,7 +373,6 @@ public ActionResult GrupSil(int id)
                     connection.Close();
                 }
             }
-
             return RedirectToAction("Hastane_Islemleri");
         }
         [HttpPost]
@@ -576,16 +585,15 @@ public ActionResult GrupSil(int id)
             else
 
             return View();
-        }
-       public IActionResult Sigorta_Fonksiyonlari_Ekle()
-        { 
-          var result = _dbConnection.Query("select * from Sigorta", null, commandType: CommandType.Text); 
-          ViewBag.Sigortas = new SelectList(result.ToList(), "Id","Sigorta_Adi");
-            
-         var result2 = _dbConnection.Query("select * from Fonksiyonlar", null, commandType: CommandType.Text);
-            ViewBag.Fonk = new SelectList(result2.ToList(), "Id","Fonksiyon_Adi");
-            
-        return View();
+        }    
+        public IActionResult Sigorta_Fonksiyonlari_Ekle()
+        {
+        var result2 = _dbConnection.Query("select * from Fonksiyonlar", null, commandType: CommandType.Text);
+        ViewBag.Fonk = new SelectList(result2.ToList(), "Id","Fonksiyon_Adi");
+        
+        var result = _dbConnection.Query("select * from Sigorta", null, commandType: CommandType.Text); 
+        ViewBag.Sigortas = new SelectList(result.ToList(), "Id","Sigorta_Adi");
+            return View();
         }
         public IActionResult FonksiyonEkle()
         { 
